@@ -3,6 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>项目网站</title>
+    <style>
+
+        .box {
+            width:80%;
+
+            font-size:20px;
+            
+            margin: 0 auto;
+
+            text-align:justify;
+
+            display:none;
+
+        }
+
+    </style>
 </head>
 <body>
     <h1 style="text-align: center;">welcome to my website</h1>
@@ -15,12 +31,17 @@
         <option value="rolesAndTasks">工作分配</option>
         </select>
     </form>
-    <div id="projectIntro" display:block>1</div>
-    <div id="targeeUser" display:none>2</div>
-    <div id="problem" display:none>3</div>
-    <div id="solution" display:none>4</div>
-    <div id="rolesAndTasks" display:none>5</div>
+    <div id="projectIntro" class="box" style="text-indent:2em;" >  本项目是一个关于解决演讲障碍的unity小游戏，通过模拟一个人在面对多人的情况下演讲的场景，利用语音识别等交互给予反馈，帮助使用者克服演讲障碍</div>
+    <div id="problem" class="box" style="text-indent:2em;">  在许多观众的面前从容不迫的演讲不是一件容易的事情，克服内心的紧张、恐惧需要练习，而在日常生活中缺少这样的练习机会，又或是在努力迈出第一步后遭受现实的打击，导致一些人具有了演讲恐惧心理，我们小组就是想设计出一个应用解决这种情况。</div>
+    <div id="targeeUser" class="box" style="text-indent:2em;">  演讲恐惧者、想进行演讲练习的人。</div>
+    <div id="solution" class="box" style="text-indent:2em;">  开发一个程序用于模拟演讲的真实场景，让使用者面对大量的虚拟观众进行演讲，并根据其演讲的状态（基于语音识别技术）使观众进行反馈，如此一来用户便具有了大量的练习机会。小组目前打算先使用unity做出一个简化版的应用，而在我们的构思中该应用可以结合VR技术进行开发，让整个环境更加的真实，对于用户的体验自然也会提升一个档次。</div>
+    <div id="rolesAndTasks" class="box">汪晟宇：思路提出以及unity开发<br>
+        苏哲琪：思路探讨。<br>
+        凌玢岩：网站搭建及管理、报告撰写。<br>
+        王浩帆：思路探讨。
+        </div>
     <script>
+        document.getElementById("projectIntro").style.display="block";
         document.getElementById("targeeUser").style.display="none";
         document.getElementById("problem").style.display="none";
         document.getElementById("solution").style.display="none";

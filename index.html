@@ -23,35 +23,52 @@
 <body>
     <h1 style="text-align: center;">welcome to my website</h1>
     <form>
-        <select id="menu">
+        <select id="menu" sytle="width:100px;hight:50px;">
         <option value="projectIntro">项目简介</option>
-        <option value="targeeUser">目标用户</option>
+        <option value="projectPre">项目演示</option>
+        <!-- <option value="targeeUser">目标用户</option>
         <option value="problem">问题描述</option>
         <option value="solution">解决方案</option>
-        <option value="rolesAndTasks">工作分配</option>
+        <option value="rolesAndTasks">工作分配</option> -->
         </select>
     </form>
-    <div id="projectIntro" class="box" style="text-indent:2em;" >  本项目是一个关于解决演讲障碍的unity小游戏，通过模拟一个人在面对多人的情况下演讲的场景，利用语音识别等交互给予反馈，帮助使用者克服演讲障碍</div>
-    <div id="problem" class="box" style="text-indent:2em;">  在许多观众的面前从容不迫的演讲不是一件容易的事情，克服内心的紧张、恐惧需要练习，而在日常生活中缺少这样的练习机会，又或是在努力迈出第一步后遭受现实的打击，导致一些人具有了演讲恐惧心理，我们小组就是想设计出一个应用解决这种情况。</div>
+    <div id="projectIntro" class="box">  项目简介：<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;本项目是一个致力于解决演讲障碍问题的程序，程序通过模拟一个人在面对多人的情况下演讲的场景，利用VR技术、语音识别等交互方式给予反馈，帮助使用者提升心理自信，克服演讲障碍。
+        <br>目标用户：<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;演讲恐惧者、想进行演讲练习的人。
+        <br>问题描述：<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;在许多观众的面前从容不迫的演讲不是一件容易的事情，除了要充分掌握演讲内容以外，克服面对观众时内心的紧张、恐惧同样需要练习，但是在日常生活中往往缺少这样的练习机会，很多时候只能一个人默默的练习。也有情况是在努力迈出第一步后表现并不如意，遭受打击。这些因素导致一些人具有了演讲恐惧心理，我们小组就是想设计出一个应用解决这种情况。
+        <br>解决方案：<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;小组计划开发一个程序用于模拟演讲的真实场景，让使用者面对大量的虚拟观众进行演讲，并根据其演讲的状态（基于语音识别技术）使观众进行反馈（比如说检测到声音较小时进行一定的鼓励），如此一来用户便具有了大量的练习机会，同时不必担心出现失误时留下阴影。小组目前打算先使用unity做出一个简化版的应用，展示出我们的构思，在以后该应用可以结合VR技术进行开发，让整个环境更加的真实，对于用户的体验自然也会提升一个档次。
+        <br>工作分配：<br>
+        汪晟宇：思路提出以及unity开发<br>
+        苏哲琪：思路探讨。<br>
+        凌玢岩：网站搭建及管理、报告撰写。<br>
+        王浩帆：思路探讨
+        </div>
+    <div id="projectPre" class="box"L>暂无内容</div>
+    <!-- <div id="problem" class="box" style="text-indent:2em;">  在许多观众的面前从容不迫的演讲不是一件容易的事情，克服内心的紧张、恐惧需要练习，而在日常生活中缺少这样的练习机会，又或是在努力迈出第一步后遭受现实的打击，导致一些人具有了演讲恐惧心理，我们小组就是想设计出一个应用解决这种情况。</div>
     <div id="targeeUser" class="box" style="text-indent:2em;">  演讲恐惧者、想进行演讲练习的人。</div>
     <div id="solution" class="box" style="text-indent:2em;">  开发一个程序用于模拟演讲的真实场景，让使用者面对大量的虚拟观众进行演讲，并根据其演讲的状态（基于语音识别技术）使观众进行反馈，如此一来用户便具有了大量的练习机会。小组目前打算先使用unity做出一个简化版的应用，而在我们的构思中该应用可以结合VR技术进行开发，让整个环境更加的真实，对于用户的体验自然也会提升一个档次。</div>
     <div id="rolesAndTasks" class="box">汪晟宇：思路提出以及unity开发<br>
         苏哲琪：思路探讨。<br>
         凌玢岩：网站搭建及管理、报告撰写。<br>
         王浩帆：思路探讨。
-        </div>
+        </div> -->
     <script>
         document.getElementById("projectIntro").style.display="block";
-        document.getElementById("targeeUser").style.display="none";
-        document.getElementById("problem").style.display="none";
-        document.getElementById("solution").style.display="none";
-        document.getElementById("rolesAndTasks").style.display="none";
+        document.getElementById("projectPre").style.display="none";
+        // document.getElementById("targeeUser").style.display="none";
+        // document.getElementById("problem").style.display="none";
+        // document.getElementById("solution").style.display="none";
+        // document.getElementById("rolesAndTasks").style.display="none";
 		document.getElementById("menu").onchange =function(){
             document.getElementById("projectIntro").style.display="none";
-            document.getElementById("targeeUser").style.display="none";
-            document.getElementById("problem").style.display="none";
-            document.getElementById("solution").style.display="none";
-            document.getElementById("rolesAndTasks").style.display="none";
+            document.getElementById("projectPre").style.display="none";
+            // document.getElementById("targeeUser").style.display="none";
+            // document.getElementById("problem").style.display="none";
+            // document.getElementById("solution").style.display="none";
+            // document.getElementById("rolesAndTasks").style.display="none";
             document.getElementById(this.options[this.selectedIndex].value).style.display="block";
 			console.log(this.options[this.selectedIndex].innerHTML);
 		}
